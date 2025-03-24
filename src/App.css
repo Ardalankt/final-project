@@ -71,6 +71,11 @@ nav {
   color: var(--primary);
 }
 
+.btns {
+  display: flex;
+  gap: 6px;
+}
+
 .btn {
   display: inline-block;
   background-color: var(--primary);

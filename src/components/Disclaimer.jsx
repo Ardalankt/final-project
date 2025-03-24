@@ -1,7 +1,7 @@
 export default function Disclaimer() {
   return (
-    <div class="container">
-      <div class="disclaimer">
+    <div className="container">
+      <div className="disclaimer">
         <h3>Medical Disclaimer</h3>
         <p>
           DermDetect is designed to assist with early detection but is not a

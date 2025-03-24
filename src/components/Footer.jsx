@@ -1,17 +1,17 @@
 export default function Footer() {
   return (
     <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-info">
-            <div class="footer-logo">DermDetect</div>
+      <div className="container">
+        <div className="footer-content">
+          <div className="footer-info">
+            <div className="footer-logo">DermDetect</div>
             <p>
               Empowering individuals with accessible skin cancer detection
               technology through artificial intelligence.
             </p>
             <p>© 2025 DermDetect. All rights reserved.</p>
           </div>
-          <div class="footer-links">
+          <div className="footer-links">
             <h3>Product</h3>
             <ul>
               <li>
@@ -28,7 +28,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div class="footer-links">
+          <div className="footer-links">
             <h3>Company</h3>
             <ul>
               <li>
@@ -45,7 +45,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div class="footer-links">
+          <div className="footer-links">
             <h3>Legal</h3>
             <ul>
               <li>
@@ -63,7 +63,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div class="copyright">
+        <div className="copyright">
           DermDetect does not provide medical advice. Always consult healthcare
           professionals.
         </div>
