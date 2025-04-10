@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header>
+    <header className="home-header">
       <div className="container">
         <nav>
           <div className="logo">
@@ -13,11 +13,11 @@ export default function Header() {
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
           </div>
-          <div className="btns">
-            <a href="/login" className="btn secondary">
+          <div className="hero-buttons">
+            <a href="/auth" className="btn secondary">
               Login
             </a>
-            <a href="src/pages/SignUp.jsx" className="btn">
+            <a href="/auth" className="btn">
               Sign Up
             </a>
           </div>
