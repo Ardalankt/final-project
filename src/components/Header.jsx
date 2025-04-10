@@ -17,7 +17,7 @@ export default function Header() {
             <a href="/login" className="btn secondary">
               Login
             </a>
-            <a href="/signup" className="btn">
+            <a href="src/pages/SignUp.jsx" className="btn">
               Sign Up
             </a>
           </div>
