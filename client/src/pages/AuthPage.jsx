@@ -13,17 +13,6 @@ export default function AuthPage() {
 
   return (
     <>
-      <header className="auth-header">
-        <div className="container">
-          <nav>
-            <a href="/" className="logo">
-              <span className="logo-icon">⚕️</span>
-              DermDetect
-            </a>
-          </nav>
-        </div>
-      </header>
-
       <div className="main-content">
         <div className="auth-container">
           {/* Image Panel */}
@@ -68,8 +57,6 @@ export default function AuthPage() {
           </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 }
