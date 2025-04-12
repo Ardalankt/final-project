@@ -36,7 +36,7 @@ exports.register = async (req, res) => {
 // @route   POST /api/auth/login
 exports.login = async (req, res) => {
   try {
-    const { email, password } = req.body;
+    const { email, password, rememberMe } = req.body;
 
     // Find user
     const user = await User.findOne({ email });
@@ -50,17 +50,18 @@ exports.login = async (req, res) => {
       return res.status(400).json({ message: "Invalid credentials" });
     }
 
+    // Determine token expiration
+    const expiresIn = rememberMe ? "7d" : "1h";
+
     // Create JWT
     const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, {
-      expiresIn: "1h",
+      expiresIn,
     });
 
-    res
-      .status(200)
-      .json({
-        token,
-        user: { id: user._id, name: user.name, email: user.email },
-      });
+    res.status(200).json({
+      token,
+      user: { id: user._id, name: user.name, email: user.email },
+    });
   } catch (err) {
     res.status(500).json({ message: "Server error", error: err.message });
   }
